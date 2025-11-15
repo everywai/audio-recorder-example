@@ -21,7 +21,15 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.colhoop94.AudioRecorder"
+      "package": "com.colhoop94.AudioRecorder",
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET"
+      ]
     },
     "web": {
       "output": "static",
@@ -66,6 +74,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9daf6c2d-b6cd-408c-b810-0b6c40f722f3"
+      }
     }
   }
 }
