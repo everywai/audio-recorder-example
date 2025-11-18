@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <service
+      android:name="com.audiostream.AudioRecorderService"
+      android:foregroundServiceType="microphone"
+      android:exported="false" />
+  </application>
+</manifest>
+
