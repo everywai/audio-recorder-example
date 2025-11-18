@@ -37,6 +37,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="microphone.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="turbo-audio-recorder"
+        options={{
+          title: 'Turbo',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="waveform" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

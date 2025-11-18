@@ -51,23 +51,23 @@
         }
       ],
       [
-        "react-native-audio-api",
+        "expo-audio",
         {
+          "microphonePermission": "AudioRecorder uses your microphone for audio playback visualization and recording demos"
+        }
+      ],
+      [
+        "react-native-audio-stream",
+        {
+          "iosMicrophonePermission": "AudioRecorder needs microphone access for voice recording and real-time audio streaming",
           "iosBackgroundMode": true,
-          "iosMicrophonePermission": "Requires microphone access",
           "androidPermissions": [
-            "android.permission.MODIFY_AUDIO_SETTINGS",
-            "android.permission.FOREGROUND_SERVICE",
-            "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-            "android.permission.FOREGROUND_SERVICE_MICROPHONE",
             "android.permission.RECORD_AUDIO",
-            "android.permission.INTERNET"
+            "android.permission.INTERNET",
+            "android.permission.FOREGROUND_SERVICE",
+            "android.permission.FOREGROUND_SERVICE_MICROPHONE"
           ],
-          "androidForegroundService": true,
-          "androidFSTypes": [
-            "mediaPlayback",
-            "microphone"
-          ]
+          "androidForegroundService": true
         }
       ]
     ],
